@@ -13,6 +13,6 @@ Summary of ECMAScript 6 features
     Number.isInteger
     Number.isSafeInteger
     Number.isNaN
-    Number.EPSILON
-    Number.MIN_SAFE_INTEGER
-    Number.MAX_SAFE_INTEGER
+    Number.EPSILON // 2.220446049250313e-16
+    Number.MIN_SAFE_INTEGER // -9007199254740991
+    Number.MAX_SAFE_INTEGER // 9007199254740991
