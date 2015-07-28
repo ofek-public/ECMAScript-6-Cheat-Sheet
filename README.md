@@ -8,7 +8,14 @@ Summary of ECMAScript 6 features
     x => {return x + 1}
 ```
 
-## Number properties
+## list deconstruction
+```javascript
+    var [x, , y] = [1,2,3]; // x === 1, y === 3
+    var [x] = []; // x === undefined
+    var [x = 1] = []; // x === 1 (default value)
+```
+
+## `Number` properties
 ```javascript
     Number.isFinite
     Number.isInteger
