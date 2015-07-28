@@ -17,7 +17,7 @@
 
 ## object destructuring
 ```javascript
-    var {x, a:y: z} = {x: 1, y: 2}; // x === 1, a === 2, z === undefined
+    var {x, a:y, z} = {x: 1, y: 2}; // x === 1, a === 2, z === undefined
 ```
 
 ## `Number` properties
