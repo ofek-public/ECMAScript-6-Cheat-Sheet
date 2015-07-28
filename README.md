@@ -2,19 +2,19 @@
 
 ## arrow functions
 ```javascript
-    x => x + 1
-    (x, y) => x + y
+    x => x + 1                      // similar to function(x) {return x + 1;}
+    (x, y) => x + y                 // similar to function(x, y) {return x + y;}
     x => {return x + 1}
 ```
 
 ## array destructuring
 ```javascript
-    var [x, , y] = [1,2,3]; // x === 1, y === 3
-    var [x] = []; // x === undefined
-    var [x = 1] = []; // x === 1 (default value)
-    var [x, y, z] = "xyz"; // x === "x", y === "y", z === undefined
-    var [a, ...b] = [1, 2, 3]; // a === 1, b === [2, 3]
-    var [a, ...b] = [1]; // a === 1, b === []
+    var [x, , y] = [1,2,3];         // x === 1, y === 3
+    var [x] = [];                   // x === undefined
+    var [x = 1] = [];               // x === 1 (default value)
+    var [x, y, z] = "xyz";          // x === "x", y === "y", z === undefined
+    var [a, ...b] = [1, 2, 3];      // a === 1, b === [2, 3]
+    var [a, ...b] = [1];            // a === 1, b === []
 ```
 
 ## object destructuring
@@ -25,12 +25,12 @@
 ## default function parameters
 ```javascript
     function(a = 1, b = 2) {...}
-    function(a, b = a) {...} // default can be previous param
+    function(a, b = a) {...}        // default can be previous param
 ```
 
 ## rest parameters
 ```javascript
-    function(a, ...b) {...} // b will be an array containing the 2nd and above params
+    function(a, ...b) {...}         // b will be an array containing the 2nd and above params
 ```
 
 ## `Number` properties
@@ -39,9 +39,9 @@
     Number.isInteger
     Number.isSafeInteger
     Number.isNaN
-    Number.EPSILON // 2.220446049250313e-16
-    Number.MIN_SAFE_INTEGER // -9007199254740991
-    Number.MAX_SAFE_INTEGER // 9007199254740991
+    Number.EPSILON                  // 2.220446049250313e-16
+    Number.MIN_SAFE_INTEGER         // -9007199254740991
+    Number.MAX_SAFE_INTEGER         // 9007199254740991
 ```
 
 ## `Math` methods
