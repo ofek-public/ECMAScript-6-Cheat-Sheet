@@ -13,11 +13,24 @@
     var [x] = []; // x === undefined
     var [x = 1] = []; // x === 1 (default value)
     var [x, y, z] = "xyz"; // x === "x", y === "y", z === undefined
+    var [a, ...b] = [1, 2, 3]; // a === 1, b === [2, 3]
+    var [a, ...b] = [1]; // a === 1, b === []
 ```
 
 ## object destructuring
 ```javascript
     var {x, a:y, z} = {x: 1, y: 2}; // x === 1, a === 2, z === undefined
+```
+
+## default function parameters
+```javascript
+    function(a = 1, b = 2) {...}
+    function(a, b = a) {...} // default can be previous param
+```
+
+## rest parameters
+```javascript
+    function(a, ...b) {...} // b will be an array containing the 2nd and above params
 ```
 
 ## `Number` properties
