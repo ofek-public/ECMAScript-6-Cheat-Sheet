@@ -8,11 +8,17 @@ Summary of ECMAScript 6 features
     x => {return x + 1}
 ```
 
-## list deconstruction
+## array destructuring
 ```javascript
     var [x, , y] = [1,2,3]; // x === 1, y === 3
     var [x] = []; // x === undefined
     var [x = 1] = []; // x === 1 (default value)
+    var [x, y, z] = "xyz"; // x === "x", y === "y", z === undefined
+```
+
+## object destructuring
+```javascript
+    var {x, a:y: z} = {x: 1, y: 2}; // x === 1, a === 2, z === undefined
 ```
 
 ## `Number` properties
