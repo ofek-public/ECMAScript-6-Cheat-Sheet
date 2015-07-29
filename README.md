@@ -33,6 +33,12 @@
     function(a, ...b) {...}         // b will be an array containing the 2nd and above params
 ```
 
+## Octal and binary literals
+```javascript
+    0b10101101                      // === 173
+    0o255                           // === 173
+```
+
 ## `Number` properties
 ```javascript
     Number.isFinite
