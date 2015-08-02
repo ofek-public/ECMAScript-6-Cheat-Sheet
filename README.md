@@ -36,7 +36,7 @@
 ### Template strings
 ```javascript
     var x = 1, y = 'hello';
-    `${y} {x + 1}`                      // === "hello 2"
+    `${y}! x + 1 = ${x + 1}`                      // === "hello! x + 1 = 2"
 ```
 
 ### Modules
