@@ -44,6 +44,9 @@
     export function duplicate(x) {return x + x;}
     export var name = 'mi';
     
+    import mylib from "lib/mylib"
+    mylib.duplicate(mylib.name);        // === 'mimi'
+    
     import * as mylib from "lib/mylib"
     mylib.duplicate(mylib.name);        // === 'mimi'
     
